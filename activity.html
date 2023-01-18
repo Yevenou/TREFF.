@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neue Aktivität</title>
+    <meta name="description" content="Find new activities">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="container-header flex">
+
+            <h1>Aktivität hinzufügen</h1>
+
+            <nav class="relative">
+
+                <a class="newActivity" href="index.html"><span
+                    class="material-symbols-outlined">arrow_back</span></a>
+
+            </nav>
+
+        </header>
+
+    </div>
+
+
+    <div id="meineActivity">
+
+        <p id="infoText"> </p>
+
+
+        <label for="titel">Name der Aktivität</label>
+        <input id="titel" type="text" value="" class="inputActivity" placeholder="Name">
+
+        <label for="datum">Datum</label> <br>
+        <input id="datum" type="date" value="" class="inputActivity">
+
+        <label for="adresse">Adresse der Aktivität</label>
+        <input id="adresse" type="text" value="" class="inputActivity" placeholder="Adresse">
+
+        <label for="stadt">In welche Stadt findet es stat?</label>
+        <select class="dropdown" name="stadt" id="stadt">
+            <option value="2">Chur</option>
+            <option value="1">Bern</option>
+            <option value="3">Zürich</option>
+        </select>
+
+        <label for="beschreibung">Beschreibung</label>
+        <textarea id="beschreibung" name="beschreibung" rows="8" placeholder="Beschreibung der Aktivität"></textarea>
+
+        <label class="kategorien">Kategorien Auswählen:</label>
+
+
+        <div id="hashtags" class="flex">
+
+
+        </div>
+
+        <button class="hidden" id="button-neue" onclick="newActivity()">Veröffentlichen</button>
+        <button class="hidden" id="button-aktualisieren" onclick="editActivity()">Aktualisieren</button>
+        <button class="hidden" id="button-loeschen" onclick="deleteActivity()">Löschen</button>
+
+        <p id="nachricht"> </p>
+
+    </div>
+
+    <script src="js/activity.js"></script>
+
+</body>
+
+</html>

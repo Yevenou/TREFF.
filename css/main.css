@@ -1,0 +1,479 @@
+html {
+    font-family: 'Lato', sans-serif;
+    background-color: #e7fffc;
+}
+
+img {
+    margin: 0 auto;
+}
+
+/* Textfarbe und -größe definieren */
+
+h1 {
+    color: #03a99d;
+}
+
+h2 {
+    font-size: 30px;
+    color: #03a99d;
+}
+
+a {
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Google Icons */
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* FLEX */
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+}
+
+.container-header {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.container {
+    width: 96vw;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.login, .register {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.savedActivity {
+    height: 22vh;
+    background-color: #febd59;
+    border-radius: 20px;
+    padding: 2vh;
+    width: 82vw;
+    margin: 0 3px;
+
+}
+
+.savedActivityTreff {
+    background-color: #febd59;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* /* Bottom menu bar */
+.container-navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+}
+
+.navbar {
+    overflow: hidden;
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(145deg, #138b7d, #16a595);
+
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.active {
+    background: #febd59;
+    border-radius: 40px;
+}
+
+
+/* SEITE LOGIN UND DASHBOARD Einstellen der Logogröße */
+
+.smallLogo {
+    height: 10vh;
+}
+
+.logo img {
+    display: flex;
+    width: 30%;
+}
+
+.loginlogo {
+    justify-content: center;
+}
+
+/* SEITE Dashboard (Homepage) Bereich mit horizontalem Scrollen */
+
+.fullWidth {
+    width: 100%;
+}
+
+.fullWidth h2 {
+    padding: 0 2vw;
+}
+
+/* !!! ZU AUFRÄUMEN */
+
+.rectangle {
+    background-color: #03a99d;
+    margin-top: 6vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 1vw;
+    margin: 2vw;
+}
+
+.title {
+    text-align: center;
+}
+
+label {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 2vw;
+    padding-top: 3vw;
+}
+
+.intro {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+a.nachricht {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+p#infoText {
+    color: white;
+    padding-left: 2vw;
+}
+
+.highlights {
+    color: #febd59;
+}
+
+/* Richtige farbe setzen dashboard*/
+
+.infos {
+    color: #03a99d;
+    padding-left: 2vw;
+}
+
+.infos1 {
+    color: #03a99d;
+}
+
+
+
+/* Gestaltung Input, buttons, dropdown menu */
+input,
+textarea,
+.dropdown {
+    width: 96vw;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+}
+
+.relative {
+    position: fixed;
+    right: 0;
+    padding-right: 3vw;
+}
+
+textarea {
+    resize: none;
+}
+
+/* test */
+a.newActivity {
+    background-color: #febd59;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 1vw 2vw;
+    padding: 10px 20px;
+    margin-top: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+a.newActivity:hover {
+    opacity: 1
+}
+
+button {
+    background-color: #febd59;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 1vw 2vw;
+}
+
+.inputlog {
+    margin: 2vw;
+    width: calc(100% - 4vw);
+    border-radius: 40px;
+}
+
+button.joinActivity {
+    background-color: #febd59;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin: 1vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+button.joinActivity:hover {
+    opacity: 1
+}
+
+.startbutton {
+    border-radius: 40px;
+    background-color: #febd59;
+    margin: 1vw 2vw;
+}
+
+/* Button seite Aktivitäten */
+
+#button-neue {
+    background-color: #febd59;
+    margin: 1vw 2vw;
+}
+
+#button-aktualisieren {
+    background-color: #febd59;
+    margin: 1vw 2vw;
+}
+
+#button-loeschen {
+    background-color: #fe5959;
+    margin: 1vw 2vw;
+}
+
+/* SEITE DASHBOARD*/
+
+.activity {
+    background-color: #03a99d;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.green {
+    background-color: #03a99d;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+.dashboard-saved-activity {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 0 2vw;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2vw;
+}
+
+label.kategorien {
+    margin-top: 2vw;
+    font-size: 26px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Seite Kategorien*/
+
+.container-header p {
+    color: #03a99d;
+
+}
+
+/* meineActivity gestaltung*/
+
+#meineActivity {
+    background-color: #03a99d;
+    margin-top: 6vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+#beschreibung {
+    background-color: #ffffff;
+    flex-direction: column;
+    border-radius: 0px;
+    margin: 2vw;
+    border-radius: 30px;
+    width: calc(100% - 4vw);
+}
+
+.inputActivity,
+#stadt {
+    margin: 2vw;
+    width: calc(100% - 4vw);
+    border-radius: 40px;
+}
+
+#meineActivity {
+    margin: 1vw;
+}
+
+.note {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 2vh;
+}
+
+
+/* ---> Seite Profil */
+
+.profilinfo {
+    font-size: 1.2em;
+    background-color: #febd59;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;
+    margin: 2vw;
+    border-radius: 30px;
+    width: calc(100% - 4vw);
+}
+
+.profilinfo p {
+    text-align: center;
+    padding: 2vw;
+    color: #000000;
+
+}
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar-track
+{
+	background-color: #bbbbbb;
+}
+
+::-webkit-scrollbar
+{
+    height: 4px;
+    overflow: visible;
+    width: 4px;
+	background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 30px;
+	background-color: #212121;
+}
+
+
+
+/* dies sorgt dafür, dass das Menü nicht ausgeblendet wird */
+
+.marginBottom {
+    padding-bottom: 70px;
+}
+
+
+/* Desktop mode */
+
+@media only screen and (min-width: 768px) {
+
+
+    .savedActivity {
+        height: 25vh;
+        width: 30vw;
+
+    }
+
+    .logo img {
+        display: flex;
+        width: 10%;
+    }
+}

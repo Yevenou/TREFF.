@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <meta name="description" content="See your profile">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+
+<body>
+
+    <div class="container-navbar">
+        <div class="navbar">
+            <a href="index.html"><span class="material-symbols-outlined">dashboard</span></a>
+            <a href="treffpunkte.html"><span class="material-symbols-outlined">radio_button_unchecked</span></a>
+            <a href="suchen.html"><span class="material-symbols-outlined">search</span></a>
+            <a href="profil.html" class="active"><span class="material-symbols-outlined">Person</span></a>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <header class="container-header flex">
+
+            <h1>Hallo <span id="username"></span></h1>
+
+
+            <nav class="relative">
+
+                <button id="logout" onclick="logout()"><span class="material-symbols-outlined">logout</span> </button>
+
+            </nav>
+
+
+        </header>
+
+    </div>
+
+    <section class="profilinfo">
+        <p>Willkommen in deinem Profil! Hier siehst du deine persönlichen Daten. </p>
+        <h3>Email: <span id="email"></span></h3>
+        <h3>Über uns</h3>
+        <p>Hinter Treff. stecken vier motivierte Studierende, welche im dritten Semester des Studienganges Multimedia
+            Production sind. Immer wieder waren sie auf der Suche nach Aktivitäten in der Stadt Chur. Doch allein
+            machten diese Aktivitäten nicht so viel Spass.</p>
+        <p>Schön, dass du da bist 😊 </p>
+    </section>
+
+    <script src="js/profil.js"></script>
+
+</body>
+
+</html>
